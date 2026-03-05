@@ -34,19 +34,14 @@ Final Output: 4-unit Softmax layer providing probability distribution across cla
 **Session Initialization:** Loads lung_cancer_model.onnx using onnxruntime.InferenceSession for CPU-optimized execution.
 **Input Processing:** Converts uploaded images via PIL, resizes them to the 150x150 input shape, and casts them to float32 NumPy arrays.
 **Diagnostic Visualization:**
-Runs inference to generate confidence percentages.
-Calculates relative risk and maps results to clinical survival statistics.
-
-Renders dynamic Plotly charts to display classification probability.
-
-Performance Metrics
-The model demonstrates robust convergence over 50 epochs:
-
-Training Accuracy: >99%
-
-Validation Accuracy: ~93.4%
-
-Validation Loss: ~0.57 (Epoch 43)
+- Runs inference to generate confidence percentages.
+- Calculates relative risk and maps results to clinical survival statistics.
+- Renders dynamic Plotly charts to display classification probability.
+# Performance Metrics
+**The model demonstrates robust convergence over 50 epochs:**
+- Training Accuracy: >99%
+- Validation Accuracy: ~93.4%
+- Validation Loss: ~0.57 (Epoch 43)
 
 Installation and Execution
 Requirements
